@@ -1,1 +1,1 @@
-Dash board for home craps game
+Dashboard for home craps game
