@@ -1,7 +1,9 @@
 :root {
-    --crl-primary-500: hsl(90, 59%, 27%);
+    
     --crl-primary-400: hsl(61, 78%, 56%);
-    --crl-primary-700: hsl(104, 27%, 19%);
+    --crl-primary-500: hsl(90, 59%, 27%);
+    --crl-primary-700: hsla(104, 27%, 19%, 0.60);
+    --crl-secondary-100: hsl(0, 0%, 100%);
 
     --fw-light: 300;
     --fw-regular: 400;
@@ -10,7 +12,8 @@
     --ff-primary: 'Unbounded', cursive;
     --ff-secondary: 'Roboto Mono', monospace;
 
-    --shadow-size: .25rem;
+    --shadow-size: .30rem;
+    
 }
 
 
@@ -70,7 +73,7 @@
     font-family: var(--ff-secondary);
     font-weight: var(--fw-regular);
     font-size: 0.1rem;
-    background-color: var(--crl-primary-700);
+    background-color: var(--crl-primary-500);
     overflow: hidden;
 }
 
@@ -80,7 +83,7 @@
 */
 
 .grid__container { 
-    --gap-all: 15em;
+    --gap-all: 20em;
     --bor-radius: 1.5rem;
     display: grid;
     grid-template-columns: repeat(6, minmax(25em, 1fr));
@@ -88,8 +91,9 @@
     grid-column-gap: var(--gap-all);
     grid-row-gap: var(--gap-all);
     margin: 10em;
-    background-color: var(--crl-primary-700);
+    background-color: var(--crl-primary-500);
     color: var(--crl-primary-400);
+    border-radius: var(--bor-radius);
  
 }
 
@@ -103,7 +107,7 @@
     background-color: var(--crl-primary-500);
     border-radius: var(--bor-radius);
     gap: .5rem;
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 .min__bet-title {
@@ -132,6 +136,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 .max__odds-title {
@@ -159,6 +164,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 /*------------------BET INFO SECTION END ------------------ */
@@ -175,7 +181,7 @@
     background-color: var(--crl-primary-500);
     border-radius: var(--bor-radius);
     gap: .5rem;
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 
 }
 
@@ -192,6 +198,7 @@
   margin: 1rem 1rem 0 1rem;
   align-items: center;
   justify-content: center;
+  
 }
 
 .circle-box {
@@ -210,11 +217,11 @@
   justify-content: center;  
   margin: .5rem;
   background: var(--crl-primary-700);
-  color: var(--crl-primary-400);
+  color: var(--crl-secondary-100);
   font-family: var(--ff-primary);
   font-size: 45em;
   min-width: 9rem;
-  box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+  box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 
@@ -241,7 +248,7 @@
     background-color: var(--crl-primary-500);
     border-radius: var(--bor-radius);
     gap: .5rem;
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 /*------------------ALL TALL SECTION END-----------------------*/
@@ -255,17 +262,17 @@
     grid-column: 6 / 7;
     display: grid;
     grid-template-rows: .25fr 1fr ;
-    background-color: var(--crl-primary-400);
+    background-color: var(--crl-primary-500);
     border-radius: var(--bor-radius);
     gap: .5rem;
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-500);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 .cur__num-title {
   display: flex;
-  background-color: var(--crl-primary-700);
+  background-color: var(--crl-primary-400);
   border-radius: 16px;
-  color: var(--crl-primary-400);
+  color: var(--crl-primary-500);
   font-size: 20em;
   font-family: var(--ff-primary);
   font-weight: var(--fw-Bold);
@@ -277,15 +284,15 @@
 .cur__num-text {
   background-color: var(--crl-primary-700);
   font-family: var(--ff-primary);
-  color: var(--crl-primary-400);
+  color: var(--crl-secondary-100);
   border-radius: 16px;
   display: flex;
-  margin: 1rem;
-  font-size: 100em;
+  margin: 0 2rem 2rem 2rem;
+  font-size: 75em;
   justify-content: center;
   align-items: center;
-  
 }
+
 /*------------------CURRENT # SECTION END-----------------------*/
 /*----------------------------------------------------------------*/
 
@@ -304,7 +311,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 .info__text-box {
@@ -318,7 +325,7 @@
   justify-content: center;
   padding: 0 15rem;
   border-radius: 16px;
-  box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+  box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
   margin: 1.5rem;
   display: inline-block;
   justify-content: center;
@@ -341,20 +348,22 @@
     grid-template-rows: 1fr 3fr;
     background-color: var(--crl-primary-500);
     border-radius: var(--bor-radius);
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 .lower__main-title {
   display: flex;
   background-color: var(--crl-primary-700);
   border-radius: 16px;
-  color: var(--crl-primary-400);
+  color: var(--crl-secondary-100);
   font-size: 30em;
   font-family: var(--ff-primary);
   font-weight: var(--fw-light);
   margin: 1rem;
   justify-content: center;
   align-items: center;
+  
+
 }
 
 .lower-cards {
@@ -364,7 +373,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
 }
 
 .field__title {
@@ -384,10 +392,10 @@
 
 .lower__card-title {
   background-color: var(--crl-primary-400);
-  font-size: 15em;
+  font-size: 20em;
   font-family: var(--ff-primary);
   font-weight: var(--fw-light);
-  color: var(--crl-primary-700);
+  color: var(--crl-primary-500);
   margin: 1rem;
   padding: .5rem;
   width: 80%;
@@ -397,7 +405,7 @@
 }
 
 .lower__card-text {
-  font-size: 100em;
+  font-size: 80em;
   font-family: var(--ff-secondary);
   font-weight: var(--fw-light);
   color: var(--crl-primary-400);
@@ -423,7 +431,7 @@
     grid-template-rows: 1fr 3fr;
     background-color: var(--crl-primary-500);
     border-radius: var(--bor-radius);
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 .roll__count-title {
@@ -457,7 +465,7 @@
     grid-template-rows: 1fr 3fr;
     background-color: var(--crl-primary-500);
     border-radius: var(--bor-radius);
-    box-shadow: 0 0 0 var(--shadow-size) var(--crl-primary-400);
+    box-shadow: 0 0 0 var(--shadow-size) var(--crl-secondary-100);
 }
 
 .hardway__title {
